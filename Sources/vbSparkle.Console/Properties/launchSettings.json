@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "vbSparkle.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "-p E:\\Git\\Workspaces\\CERT\\vbSparkle\\Sources\\vbSparkle.Web\\wwwroot\\samples\\sample_1.txt"
+    }
+  }
+}

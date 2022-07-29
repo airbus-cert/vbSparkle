@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/airbus-cert/vbSparkle</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/airbus-cert/vbSparkle</RepositoryUrl>
+    <PackageTags>vbscript, visualbasic, vba, deobfuscation, malware, reverse</PackageTags>
+    <Description>vbSparkle is a source-to-source multi-platform Visual Basic deobfuscator based on partial-evaluation and is mainly dedicated to the analysis of malicious code written in VBScript and VBA (Office Macro).
+
+It is written in native C# and provides a .Net Standard library, and works on Windows, Linux, MacOS, etc..
+
+The parsing of Visual Basic Script and VBA is processed through the use of ANTLR grammar &amp; lexer parsers.</Description>
+    <Copyright>Airbus CERT, Sylvain Bruyere</Copyright>
+    <Authors>Airbus CERT, Sylvain Bruyere</Authors>
+    <Company>Airbus</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Antlr4.CodeGenerator" Version="4.6.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Antlr4.Runtime" Version="4.6.6" />
+    <PackageReference Include="MathNet.Symbolics" Version="0.21.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.1" />
+    <PackageReference Include="vbeDecoder" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Antlr4 Update="VBPreprocessors.g4">
+      <ForceAtn>false</ForceAtn>
+    </Antlr4>
+    <Antlr4 Update="VBScript-preprocessor.g4">
+      <DefaultCustomToolNamespace>$([MSBuild]::ValueOrDefault('$(RootNamespace).%(DefaultCustomToolNamespace)', '').TrimEnd('.'))</DefaultCustomToolNamespace>
+      <CustomToolNamespace>$([MSBuild]::ValueOrDefault(%(CustomToolNamespace), %(DefaultCustomToolNamespace)))</CustomToolNamespace>
+    </Antlr4>
+    <Antlr4 Update="VBScript.g4">
+      <CustomToolNamespace>vbSparkle</CustomToolNamespace>
+    </Antlr4>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

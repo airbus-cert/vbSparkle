@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vbSparkle", "Sources\vbSparkle\vbSparkle.csproj", "{63C17F03-2FD2-4EDE-BE78-5E4A3950BAFF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vbSparkle.CLI", "Sources\vbSparkle.Console\vbSparkle.CLI.csproj", "{0CFD7616-AB1D-461F-A631-95184F202F23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{00B4B68B-5BF8-4220-B746-831EAACD5030}"
+	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
+		LICENSE.txt = LICENSE.txt
+		parse-tree.svg = parse-tree.svg
+		railroad_diagram.png = railroad_diagram.png
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vbSparkle.Web", "Sources\vbSparkle.Web\vbSparkle.Web.csproj", "{624C3675-DBFF-4D53-9488-9A9987E467DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63C17F03-2FD2-4EDE-BE78-5E4A3950BAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C17F03-2FD2-4EDE-BE78-5E4A3950BAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C17F03-2FD2-4EDE-BE78-5E4A3950BAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C17F03-2FD2-4EDE-BE78-5E4A3950BAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CFD7616-AB1D-461F-A631-95184F202F23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CFD7616-AB1D-461F-A631-95184F202F23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CFD7616-AB1D-461F-A631-95184F202F23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CFD7616-AB1D-461F-A631-95184F202F23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{624C3675-DBFF-4D53-9488-9A9987E467DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{624C3675-DBFF-4D53-9488-9A9987E467DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{624C3675-DBFF-4D53-9488-9A9987E467DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{624C3675-DBFF-4D53-9488-9A9987E467DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {764C8226-F63B-468A-8601-ACED4C17B339}
+	EndGlobalSection
+EndGlobal

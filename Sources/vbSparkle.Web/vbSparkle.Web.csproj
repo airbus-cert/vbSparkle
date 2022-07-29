@@ -1,0 +1,140 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <UserSecretsId>ff9af7fd-11b5-4cf0-9328-4d4cedc2e488</UserSecretsId>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\samples\real_1 - Copy.txt" />
+    <Content Remove="wwwroot\samples\real_1.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="wwwroot\js\highlight\highlight.pack.js" />
+    <None Remove="wwwroot\js\highlight\styles\vs.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\cert.ico" />
+    <None Include="wwwroot\js\highlight\CHANGES.md" />
+    <None Include="wwwroot\js\highlight\LICENSE" />
+    <None Include="wwwroot\js\highlight\README.md" />
+    <None Include="wwwroot\js\highlight\README.ru.md" />
+    <None Include="wwwroot\js\highlight\styles\a11y-dark.css" />
+    <None Include="wwwroot\js\highlight\styles\a11y-light.css" />
+    <None Include="wwwroot\js\highlight\styles\agate.css" />
+    <None Include="wwwroot\js\highlight\styles\an-old-hope.css" />
+    <None Include="wwwroot\js\highlight\styles\androidstudio.css" />
+    <None Include="wwwroot\js\highlight\styles\arduino-light.css" />
+    <None Include="wwwroot\js\highlight\styles\arta.css" />
+    <None Include="wwwroot\js\highlight\styles\ascetic.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-cave-dark.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-cave-light.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-dune-dark.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-dune-light.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-estuary-dark.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-estuary-light.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-forest-dark.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-forest-light.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-heath-dark.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-heath-light.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-lakeside-dark.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-lakeside-light.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-plateau-dark.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-plateau-light.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-savanna-dark.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-savanna-light.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-seaside-dark.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-seaside-light.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-sulphurpool-dark.css" />
+    <None Include="wwwroot\js\highlight\styles\atelier-sulphurpool-light.css" />
+    <None Include="wwwroot\js\highlight\styles\atom-one-dark-reasonable.css" />
+    <None Include="wwwroot\js\highlight\styles\atom-one-dark.css" />
+    <None Include="wwwroot\js\highlight\styles\atom-one-light.css" />
+    <None Include="wwwroot\js\highlight\styles\brown-paper.css" />
+    <None Include="wwwroot\js\highlight\styles\brown-papersq.png" />
+    <None Include="wwwroot\js\highlight\styles\codepen-embed.css" />
+    <None Include="wwwroot\js\highlight\styles\color-brewer.css" />
+    <None Include="wwwroot\js\highlight\styles\darcula.css" />
+    <None Include="wwwroot\js\highlight\styles\dark.css" />
+    <None Include="wwwroot\js\highlight\styles\darkula.css" />
+    <None Include="wwwroot\js\highlight\styles\default.css" />
+    <None Include="wwwroot\js\highlight\styles\docco.css" />
+    <None Include="wwwroot\js\highlight\styles\dracula.css" />
+    <None Include="wwwroot\js\highlight\styles\far.css" />
+    <None Include="wwwroot\js\highlight\styles\foundation.css" />
+    <None Include="wwwroot\js\highlight\styles\github-gist.css" />
+    <None Include="wwwroot\js\highlight\styles\github.css" />
+    <None Include="wwwroot\js\highlight\styles\gml.css" />
+    <None Include="wwwroot\js\highlight\styles\googlecode.css" />
+    <None Include="wwwroot\js\highlight\styles\grayscale.css" />
+    <None Include="wwwroot\js\highlight\styles\gruvbox-dark.css" />
+    <None Include="wwwroot\js\highlight\styles\gruvbox-light.css" />
+    <None Include="wwwroot\js\highlight\styles\hopscotch.css" />
+    <None Include="wwwroot\js\highlight\styles\hybrid.css" />
+    <None Include="wwwroot\js\highlight\styles\idea.css" />
+    <None Include="wwwroot\js\highlight\styles\ir-black.css" />
+    <None Include="wwwroot\js\highlight\styles\isbl-editor-dark.css" />
+    <None Include="wwwroot\js\highlight\styles\isbl-editor-light.css" />
+    <None Include="wwwroot\js\highlight\styles\kimbie.dark.css" />
+    <None Include="wwwroot\js\highlight\styles\kimbie.light.css" />
+    <None Include="wwwroot\js\highlight\styles\lightfair.css" />
+    <None Include="wwwroot\js\highlight\styles\magula.css" />
+    <None Include="wwwroot\js\highlight\styles\mono-blue.css" />
+    <None Include="wwwroot\js\highlight\styles\monokai-sublime.css" />
+    <None Include="wwwroot\js\highlight\styles\monokai.css" />
+    <None Include="wwwroot\js\highlight\styles\nord.css" />
+    <None Include="wwwroot\js\highlight\styles\obsidian.css" />
+    <None Include="wwwroot\js\highlight\styles\ocean.css" />
+    <None Include="wwwroot\js\highlight\styles\paraiso-dark.css" />
+    <None Include="wwwroot\js\highlight\styles\paraiso-light.css" />
+    <None Include="wwwroot\js\highlight\styles\pojoaque.css" />
+    <None Include="wwwroot\js\highlight\styles\pojoaque.jpg" />
+    <None Include="wwwroot\js\highlight\styles\purebasic.css" />
+    <None Include="wwwroot\js\highlight\styles\qtcreator_dark.css" />
+    <None Include="wwwroot\js\highlight\styles\qtcreator_light.css" />
+    <None Include="wwwroot\js\highlight\styles\railscasts.css" />
+    <None Include="wwwroot\js\highlight\styles\rainbow.css" />
+    <None Include="wwwroot\js\highlight\styles\routeros.css" />
+    <None Include="wwwroot\js\highlight\styles\school-book.css" />
+    <None Include="wwwroot\js\highlight\styles\school-book.png" />
+    <None Include="wwwroot\js\highlight\styles\shades-of-purple.css" />
+    <None Include="wwwroot\js\highlight\styles\solarized-dark.css" />
+    <None Include="wwwroot\js\highlight\styles\solarized-light.css" />
+    <None Include="wwwroot\js\highlight\styles\sunburst.css" />
+    <None Include="wwwroot\js\highlight\styles\tomorrow-night-blue.css" />
+    <None Include="wwwroot\js\highlight\styles\tomorrow-night-bright.css" />
+    <None Include="wwwroot\js\highlight\styles\tomorrow-night-eighties.css" />
+    <None Include="wwwroot\js\highlight\styles\tomorrow-night.css" />
+    <None Include="wwwroot\js\highlight\styles\tomorrow.css" />
+    <None Include="wwwroot\js\highlight\styles\vs2015.css" />
+    <None Include="wwwroot\js\highlight\styles\xcode.css" />
+    <None Include="wwwroot\js\highlight\styles\xt256.css" />
+    <None Include="wwwroot\js\highlight\styles\zenburn.css" />
+    <None Include="wwwroot\samples\real_1 - Copy.txt" />
+    <None Include="wwwroot\samples\real_1.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="wwwroot\js\highlight\highlight.pack.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
+    <Page Include="wwwroot\js\highlight\styles\vs.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\vbSparkle\vbSparkle.csproj" />
+  </ItemGroup>
+
+</Project>

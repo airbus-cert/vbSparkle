@@ -1,0 +1,17 @@
+﻿Dim test As String
+test = ChrW(&H80)
+Debug.Print Hex(Asc(test))
+Debug.Print Hex(AscB(test))
+Debug.Print Hex(AscW(test))
+
+test = Chr(&H80)
+
+Debug.Print Hex(Asc(test))
+Debug.Print Hex(AscB(test))
+Debug.Print Hex(AscW(test))
+
+
+test = ChrW(&H4343)
+Debug.Print Hex(Asc(test))
+Debug.Print Hex(AscB(test))
+Debug.Print Hex(AscW(test))

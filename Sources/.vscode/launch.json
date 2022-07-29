@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    {
+        "type": "antlr-debug",
+        "request": "launch",
+        "name": "Debug Current Grammar",
+        "input": "<to_be_defined>",
+        "visualParseTree": true,
+        "startRule": "inlineBlock",
+        "grammar": "${file}"
+    },
+    {
+        "type": "antlr-debug",
+        "request": "launch",
+        "name": "Debug Current Grammar 2",
+        "input": "${file}",
+        "visualParseTree": true,
+        "startRule": "startRule",
+        "grammar": "../Sources/vbSparkle/VBScript.g4"
+    },
+        {
+            "type": "vbs",
+            "request": "launch",
+            "name": "CScript",
+            "program": "${file}"
+        }
+    ]
+}

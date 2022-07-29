@@ -1,0 +1,32 @@
+﻿@model vbSparkle.Web.Models.CodeUploadModel;
+
+@{
+    ViewData["Title"] = "vbSparkle - Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to vbSparkle Web UI</h1>
+
+    <p>Learn more on <a href="https://github.com/airbus-cert/vbSparkle">git project</a>.</p>
+</div>
+
+@using (Html.BeginForm("Deobfuscate", "Home", FormMethod.Post))
+{
+    <h2 class="row">
+        Visual Basic Input:
+    </h2>
+    <div class="row">
+        @Html.TextAreaFor(model => model.Before, 12, 150, htmlAttributes: new { @class = "form-control" })
+    </div>
+    <br />
+    <div class="row center-block">
+        <button type="submit" class="btn btn-primary btn-lg center-block">Beautify !</button>
+    </div>
+    <br />
+    <h2 class="row">
+        Visual Basic Output:
+    </h2>
+    <div class="row">
+        <pre style="width: 100%;"><code class="vbs">@Html.DisplayTextFor(model => model.After)</code></pre>
+    </div>
+}
