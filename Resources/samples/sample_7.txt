@@ -1,4 +1,20 @@
-﻿
+﻿dim i as long, toto as integer
+i = i+1
+msgbox i
+msgbox toto
+
+const tutu = 3
+
+if (i =4) then
+msgbox i+2
+end if
+
+function test(totso as long)
+ i = i+3
+ dim JUJU, toto as string
+ toto = "hello"
+end function
+
 Execute(chr((abs(#2019-01-01# - #2019-01-31#) * 2) +5) _
    + chr((abs(#2019-01-01# - #2019-02-01#) * 2) +4) _
    + chr((abs(#2019-01-01# - #2019-02-02#) * 2) +3) _

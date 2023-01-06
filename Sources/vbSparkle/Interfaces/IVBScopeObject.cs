@@ -5,7 +5,6 @@ namespace vbSparkle
     public interface IVBScopeObject
     {
         EvaluatorOptions Options { get; set; }
-
         VbIdentifiedObject GetIdentifiedObject(string identifier);
 
         void DeclareVariable(VbUserVariable variable);

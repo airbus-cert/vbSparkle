@@ -62,7 +62,8 @@ namespace vbSparkle.CLI
             {
                 JunkCodeProcessingMode = JunkCodeProcessingMode.Remove,
                 PerfomPartialEvaluation = true,
-                IndentSpacing = 4
+                IndentSpacing = 4,
+                SymbolRenamingMode = SymbolRenamingMode.All
             });
 
             perfWatch.Stop();

@@ -63,14 +63,27 @@ namespace vbSparkle
         {
             string id = constStatement.Identifier.ToUpper();
             Constants[id] = constStatement;
-            AllObjects[id] = constStatement;
+            AllObjects[id] = constStatement; 
+            
+            if ((Context.Options.SymbolRenamingMode & SymbolRenamingMode.Constants) > 0)
+            {
+                constStatement.Name = "const_" + Context.Options.ConstIdx;
+                Context.Options.ConstIdx++;
+            }
         }
+
 
         public void DeclareVariable(VbUserVariable variable)
         {
             string id = variable.Identifier.ToUpper();
             Variables[id] = variable;
             AllObjects[id] = variable;
+
+            if ((Context.Options.SymbolRenamingMode & SymbolRenamingMode.Variables) > 0)
+            {
+                variable.Name = "var_" + Context.Options.VarIdx;
+                Context.Options.VarIdx++;
+            }
         }
 
 

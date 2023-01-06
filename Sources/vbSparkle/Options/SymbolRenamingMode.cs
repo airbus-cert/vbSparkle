@@ -8,11 +8,11 @@ namespace vbSparkle.Options
         None,
         Variables,
         Constants,
-        PublicMembers,
-        PrivateMembers,
-        Members = PublicMembers | PrivateMembers,
-        All = Variables | Constants | Members,
-        AutoDetectObfuscatedSymbols,
+        //TODO: PublicMembers, 
+        //TODO: PrivateMembers,
+        //TODO: Members = PublicMembers | PrivateMembers,
+        All = Variables | Constants, // TODO:  | Members,
+        //TODO: AutoDetectObfuscatedSymbols,
 
     }
 }
