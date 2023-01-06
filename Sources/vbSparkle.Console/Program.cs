@@ -57,7 +57,12 @@ namespace vbSparkle.CLI
 
             perfWatch.Start();
 
-            var result = VbPartialEvaluator.PrettifyEncoded(content);
+            var result = VbPartialEvaluator.PrettifyEncoded(content, new EvaluatorOptions()
+            {
+                JunkCodeProcessingMode = JunkCodeProcessingMode.Remove,
+                PerfomPartialEvaluation = true,
+                IndentSpacing = 4
+            });
 
             perfWatch.Stop();
             Console.WriteLine($"Computed in {perfWatch.ElapsedMilliseconds} ms.");

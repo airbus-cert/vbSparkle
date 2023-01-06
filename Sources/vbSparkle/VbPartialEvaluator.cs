@@ -96,12 +96,7 @@ namespace vbSparkle
 
             VBScriptParser.StartRuleContext context = parser.startRule();
 
-            VbAnalyser analyser = new VbAnalyser(new EvaluatorOptions()
-            {
-                JunkCodeProcessingMode = JunkCodeProcessingMode.Remove,
-                PerfomPartialEvaluation = true,
-                IndentSpacing = 2
-            }) ;
+            VbAnalyser analyser = new VbAnalyser(options) ;
 
             analyser.Visit(context);
 
