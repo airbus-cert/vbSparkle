@@ -1,4 +1,6 @@
-﻿namespace vbSparkle
+﻿using vbSparkle.Options;
+
+namespace vbSparkle
 {
     public interface IVBScopeObject
     {

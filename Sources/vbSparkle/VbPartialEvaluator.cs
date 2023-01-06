@@ -1,39 +1,9 @@
 ﻿using Antlr4.Runtime;
-using System;
 using System.Linq;
+using vbSparkle.Options;
 
 namespace vbSparkle
 {
-    public enum JunkCodeProcessingMode
-    {
-        Nothing = 0,
-        Remove = 1,
-        Comment = 2
-    }
-
-    [Flags]
-    public enum SymbolRenamingMode
-    {
-        None,
-        Variables,
-        Constants,
-        PublicMembers,
-        PrivateMembers,
-        Members = PublicMembers | PrivateMembers,
-        All = Variables | Constants | Members,
-        AutoDetectObfuscatedSymbols,
-
-    }
-
-    public class EvaluatorOptions
-    {
-        public bool PerfomPartialEvaluation { get; set; } = true;
-        public JunkCodeProcessingMode JunkCodeProcessingMode { get; set; } = JunkCodeProcessingMode.Comment;
-
-        public int IndentSpacing { get; set; } = 4;
-
-        public SymbolRenamingMode SymbolRenamingMode { get; set; } = SymbolRenamingMode.None;
-    }
 
     /// <summary>
     /// Visual Basic Script, Encoded, and VBA macro partial evaluator.

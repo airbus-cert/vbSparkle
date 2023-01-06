@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using vbSparkle.EvaluationObjects;
+using vbSparkle.Options;
 
 namespace vbSparkle.PreProcessor
 {

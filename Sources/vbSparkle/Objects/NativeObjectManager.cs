@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 using vbSparkle.EvaluationObjects;
+using vbSparkle.Options;
 
 namespace vbSparkle
 {

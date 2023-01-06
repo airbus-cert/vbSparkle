@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using vbSparkle.Options;
 
 namespace vbSparkle
 {
