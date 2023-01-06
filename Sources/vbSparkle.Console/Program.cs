@@ -60,10 +60,9 @@ namespace vbSparkle.CLI
 
             var result = VbPartialEvaluator.PrettifyEncoded(content, new EvaluatorOptions()
             {
+                SymbolRenamingMode = SymbolRenamingMode.None,
                 JunkCodeProcessingMode = JunkCodeProcessingMode.Remove,
-                PerfomPartialEvaluation = true,
                 IndentSpacing = 4,
-                SymbolRenamingMode = SymbolRenamingMode.None
             });
 
             perfWatch.Stop();
