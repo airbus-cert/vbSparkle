@@ -10,6 +10,7 @@ namespace vbSparkle.PreProcessor
 
         public Dictionary<string, VbNativeIdentifiedObject> NativeObjects { get; private set; } =
             new Dictionary<string, VbNativeIdentifiedObject>();
+        public EvaluatorOptions Options { get; set; }
 
         public PPNativeObjectManager()
         {

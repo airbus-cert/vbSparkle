@@ -15,13 +15,14 @@ namespace vbSparkle
         }
 
         public override DExpression Prettify(bool partialEvaluation = false)
-        {
-            StringBuilder retCode = new StringBuilder();
+        { 
+        //{
+        //    StringBuilder retCode = new StringBuilder();
 
-            //retCode.AppendLine("Else");
-            retCode.Append(Helpers.IndentLines(4, CodeBlock.Exp(partialEvaluation)));
+        //    //retCode.AppendLine("Else");
+        //    retCode.Append(Helpers.IndentLines(Context.Options.IndentSpacing, CodeBlock.Exp(partialEvaluation)));
 
-            return new DCodeBlock(retCode.ToString());
+            return CodeBlock.Prettify(partialEvaluation);//new DCodeBlock(retCode.ToString());
         }
     }
 }

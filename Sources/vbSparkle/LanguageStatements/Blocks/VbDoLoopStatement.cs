@@ -41,7 +41,7 @@ namespace vbSparkle
             if (Object is DlStatementContext)
             {
                 retCode.AppendLine("Do");
-                retCode.AppendLine(Helpers.IndentLines(4, CodeBlock.Exp(partialEvaluation)));
+                retCode.AppendLine(Helpers.IndentLines(Context.Options.IndentSpacing, CodeBlock.Exp(partialEvaluation)));
                 retCode.Append("Loop");
             }
             else
@@ -51,14 +51,14 @@ namespace vbSparkle
                 if (Object is DlwStatementContext)
                 {
                     retCode.AppendLine("Do");
-                    retCode.AppendLine(Helpers.IndentLines(4, CodeBlock.Exp(partialEvaluation)));
+                    retCode.AppendLine(Helpers.IndentLines(Context.Options.IndentSpacing, CodeBlock.Exp(partialEvaluation)));
                     retCode.Append($"Loop {whileOrUntil} {Value.Exp(partialEvaluation)}");
                 }
 
                 if (Object is DwlStatementContext)
                 {
                     retCode.AppendLine($"Do {whileOrUntil} {Value.Exp(partialEvaluation)}");
-                    retCode.AppendLine(Helpers.IndentLines(4, CodeBlock.Exp(partialEvaluation)));
+                    retCode.AppendLine(Helpers.IndentLines(Context.Options.IndentSpacing, CodeBlock.Exp(partialEvaluation)));
                     retCode.Append("Loop");
                 }
             }

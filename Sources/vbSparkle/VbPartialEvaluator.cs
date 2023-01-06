@@ -1,8 +1,40 @@
 ﻿using Antlr4.Runtime;
+using System;
 using System.Linq;
 
 namespace vbSparkle
 {
+    public enum JunkCodeProcessingMode
+    {
+        Nothing = 0,
+        Remove = 1,
+        Comment = 2
+    }
+
+    [Flags]
+    public enum SymbolRenamingMode
+    {
+        None,
+        Variables,
+        Constants,
+        PublicMembers,
+        PrivateMembers,
+        Members = PublicMembers | PrivateMembers,
+        All = Variables | Constants | Members,
+        AutoDetectObfuscatedSymbols,
+
+    }
+
+    public class EvaluatorOptions
+    {
+        public bool PerfomPartialEvaluation { get; set; } = true;
+        public JunkCodeProcessingMode JunkCodeProcessingMode { get; set; } = JunkCodeProcessingMode.Comment;
+
+        public int IndentSpacing { get; set; } = 4;
+
+        public SymbolRenamingMode SymbolRenamingMode { get; set; } = SymbolRenamingMode.None;
+    }
+
     /// <summary>
     /// Visual Basic Script, Encoded, and VBA macro partial evaluator.
     /// </summary>
@@ -13,7 +45,7 @@ namespace vbSparkle
         /// </summary>
         /// <param name="script">VBE / VBS / VBA script code.</param>
         /// <returns>Deobfuscated & prettified script.</returns>
-        public static string PrettifyEncoded(string script)
+        public static string PrettifyEncoded(string script, EvaluatorOptions options = null)
         {
             // VBE signatures
             string VBE_SIG_START = "#@~^";
@@ -30,7 +62,7 @@ namespace vbSparkle
                     string encodedScript = script.Substring(start, len);
 
                     var result = vbeDecoder.ScriptDecoder.DecodeScript(encodedScript);
-                    result = Prettify(result);
+                    result = Prettify(result, options);
 
                     script = script.Remove(start, len).Insert(start, result);
 
@@ -39,7 +71,7 @@ namespace vbSparkle
             } 
             else
             {
-                return Prettify(script);
+                return Prettify(script, options);
             }
 
             return script;
@@ -50,9 +82,9 @@ namespace vbSparkle
         /// </summary>
         /// <param name="script">Clear text VBA / VBS script</param>
         /// <returns>Deobfuscated & prettified script.</returns>
-        private static string Prettify(string script)
+        private static string Prettify(string script, EvaluatorOptions options = null)
         {
-            string processedScript = PreProcessScript(script);
+            string processedScript = PreProcessScript(script, options);
 
             AntlrInputStream antlrStream = new AntlrInputStream(processedScript);
 
@@ -64,7 +96,13 @@ namespace vbSparkle
 
             VBScriptParser.StartRuleContext context = parser.startRule();
 
-            VbAnalyser analyser = new VbAnalyser();
+            VbAnalyser analyser = new VbAnalyser(new EvaluatorOptions()
+            {
+                JunkCodeProcessingMode = JunkCodeProcessingMode.Remove,
+                PerfomPartialEvaluation = true,
+                IndentSpacing = 2
+            }) ;
+
             analyser.Visit(context);
 
             var module = analyser.Modules.FirstOrDefault();
@@ -81,7 +119,7 @@ namespace vbSparkle
         /// </summary>
         /// <param name="script">Clear text VBA / VBS script.</param>
         /// <returns>Deobfuscated & prettified script.</returns>
-        private static string PreProcessScript(string script)
+        private static string PreProcessScript(string script, EvaluatorOptions options)
         {
             AntlrInputStream inputStream = new AntlrInputStream(script);
 
@@ -91,7 +129,7 @@ namespace vbSparkle
             VBPreprocessorsParser preprocessorParser = new VBPreprocessorsParser(preprocessorCommonTokenStream);
 
             VBPreprocessorsParser.StartRuleContext preproStartContext = preprocessorParser.startRule();
-            VbPreprocessorAnalyser preAnalyser = new VbPreprocessorAnalyser();
+            VbPreprocessorAnalyser preAnalyser = new VbPreprocessorAnalyser(options);
 
             string result = preAnalyser.Visit(preproStartContext);
             return result;

@@ -50,7 +50,7 @@ namespace vbSparkle
                 sb.Append("Class ");
             }
             sb.AppendLine(IdentifiedObject.Name);
-            sb.AppendLine(Helpers.IndentLines(4, Body.Prettify(partialEvaluation)));
+            sb.AppendLine(Helpers.IndentLines(Context.Options.IndentSpacing, Body.Prettify(partialEvaluation)));
             sb.Append("End Class");
 
             System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(Visibility);

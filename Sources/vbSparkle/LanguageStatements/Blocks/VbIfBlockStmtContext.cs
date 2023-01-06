@@ -19,7 +19,7 @@ namespace vbSparkle
 
         public override DExpression Prettify(bool partialEvaluation = false)
         {
-            StringBuilder retCode = new StringBuilder();
+            //StringBuilder retCode = new StringBuilder();
 
             //bool? isExecuted = CondValue.IsExecuted();
 
@@ -28,22 +28,22 @@ namespace vbSparkle
             //    if (isExecuted == true)
             //    {
             //        retCode.AppendLine($"'If {CondValue.Exp(partialEvaluation)} Then");
-            //        retCode.Append(Helpers.IndentLines(4, CodeBlock.Exp(partialEvaluation)));
+            //        retCode.Append(Helpers.IndentLines(Context.Options.IndentSpacing, CodeBlock.Exp(partialEvaluation)));
             //    }
             //    else
             //    {
             //        retCode.AppendLine($"'If {CondValue.Exp(partialEvaluation)} Then");
-            //        retCode.Append(Helpers.CommentLines(4, CodeBlock.Exp(false)));
+            //        retCode.Append(Helpers.CommentLines(Context.Options.IndentSpacing, CodeBlock.Exp(false)));
             //    }
             //}
             //else
             //{
             //    retCode.AppendLine($"If {CondValue.Exp(partialEvaluation)} Then");
-                retCode.Append(Helpers.IndentLines(4, CodeBlock.Exp(partialEvaluation)));
+            //retCode.Append(Helpers.IndentLines(Context.Options.IndentSpacing, CodeBlock.Exp(partialEvaluation)));
             //}
 
 
-            return new DCodeBlock(retCode.ToString());
+            return CodeBlock.Prettify(partialEvaluation);// new DCodeBlock(retCode.ToString());
         }
     }
 }

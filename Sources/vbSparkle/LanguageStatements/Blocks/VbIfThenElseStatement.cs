@@ -48,58 +48,61 @@ namespace vbSparkle
         {
             StringBuilder retCode = new StringBuilder();
 
-            //bool isFirstNonEvaluatedBlock = false;
             bool hasExecutedBlock = false;
             bool hasAmbigeousBlock = false;
+            bool isFirstBlock = true;
             
+
+            string prefixRem = (Context.Options.JunkCodeProcessingMode == JunkCodeProcessingMode.Comment) ? "'" : string.Empty;
+            int indentLevel = Context.Options.JunkCodeProcessingMode == JunkCodeProcessingMode.Remove ?
+                0:
+                Context.Options.IndentSpacing;
+
             foreach (var v in IfBlocks)
             {
-                //if (v is IVbIfBlockStmt)
-                //{
-                //    IVbIfBlockStmt v2 = (IVbIfBlockStmt)v;
-                //    var Exp = v2.CondValue.Value.Evaluate();
-                //    if (Exp.IsValuable)
-                //    {
-                //        var valueString = Exp.ToValueString();
-                //        (0).ToString();
-                //    }
-                //    (0).ToString();
-                //}
+                int diffCode = retCode.Length;
                 var ifBl = v as IVbIfBlockStmt;
                 if (ifBl != null)
                 {
                     var condValue = ifBl.CondValue;
-                    bool? isExecutedBlock = condValue.IsExecuted();
-                    if (isExecutedBlock.HasValue)
+                    bool? isBlockExecuted = condValue.IsExecuted();
+                    if (isBlockExecuted.HasValue)
                     {
-                        if (!hasExecutedBlock && isExecutedBlock.Value)
+                        if (!hasExecutedBlock && isBlockExecuted.Value)
                         {
                             hasExecutedBlock = true;
                             // block if executé
                             
                             if (hasAmbigeousBlock)
                             {
-                                retCode.AppendLine($"'ElseIf {condValue.Exp(partialEvaluation)} Then");
-                                retCode.Append(Helpers.IndentLines(4, v.Exp(partialEvaluation)));
+                                //if (Context.Options.JunkCodeProcessingMode != JunkCodeProcessingMode.Remove)
+                                retCode.AppendLine($"ElseIf {condValue.Exp(partialEvaluation)} Then");
+
+                                retCode.Append(Helpers.IndentLines(indentLevel, v.Exp(partialEvaluation)));
                             }
                             else
                             {
-                                retCode.AppendLine($"'If {condValue.Exp(partialEvaluation)} Then");
-                                retCode.Append(Helpers.IndentLines(4, v.Exp(partialEvaluation)));
+                                if (Context.Options.JunkCodeProcessingMode != JunkCodeProcessingMode.Remove)
+                                    retCode.AppendLine($"{prefixRem}If {condValue.Exp(partialEvaluation)} Then");
+
+                                retCode.Append(Helpers.IndentLines(indentLevel, v.Exp(partialEvaluation)));
                             }
                         }
                         else
                         {
-                            // block if commenté
-                            if (hasAmbigeousBlock)
+                            if (Context.Options.JunkCodeProcessingMode != JunkCodeProcessingMode.Remove)
                             {
-                                retCode.AppendLine($"'ElseIf {condValue.Exp(partialEvaluation)} Then");
-                                retCode.Append(Helpers.CommentLines(4, v.Exp(false)));
-                            } 
-                            else
-                            {
-                                retCode.AppendLine($"'If {condValue.Exp(partialEvaluation)} Then");
-                                retCode.Append(Helpers.CommentLines(4, v.Exp(false)));
+                                // block if commenté
+                                if (hasAmbigeousBlock || !isFirstBlock)
+                                {
+                                    retCode.AppendLine($"'ElseIf {condValue.Exp(partialEvaluation)} Then");
+                                    retCode.Append(Helpers.CommentLines(Context.Options.IndentSpacing, v.Exp(false), prefixRem));
+                                }
+                                else
+                                {
+                                    retCode.AppendLine($"'If {condValue.Exp(partialEvaluation)} Then");
+                                    retCode.Append(Helpers.CommentLines(Context.Options.IndentSpacing, v.Exp(false), prefixRem));
+                                }
                             }
                         }
                     } 
@@ -107,8 +110,11 @@ namespace vbSparkle
                     {
                         if (hasExecutedBlock)
                         {
-                            retCode.AppendLine($"'ElseIf {condValue.Exp(partialEvaluation)} Then");
-                            retCode.Append(Helpers.CommentLines(4, v.Exp(partialEvaluation)));
+                            if (Context.Options.JunkCodeProcessingMode != JunkCodeProcessingMode.Remove)
+                            {
+                                retCode.AppendLine($"'ElseIf {condValue.Exp(partialEvaluation)} Then");
+                                retCode.Append(Helpers.CommentLines(Context.Options.IndentSpacing, v.Exp(partialEvaluation), prefixRem));
+                            }
                         }
                         else
                         {
@@ -116,12 +122,12 @@ namespace vbSparkle
                             if (hasAmbigeousBlock)
                             {
                                 retCode.AppendLine($"ElseIf {condValue.Exp(partialEvaluation)} Then");
-                                retCode.Append(Helpers.IndentLines(4, v.Exp(partialEvaluation)));
+                                retCode.Append(Helpers.IndentLines(Context.Options.IndentSpacing, v.Exp(partialEvaluation)));
                             }
                             else
                             {
                                 retCode.AppendLine($"If {condValue.Exp(partialEvaluation)} Then");
-                                retCode.Append(Helpers.IndentLines(4, v.Exp(partialEvaluation)));
+                                retCode.Append(Helpers.IndentLines(Context.Options.IndentSpacing, v.Exp(partialEvaluation)));
                             }
                             hasAmbigeousBlock = true;
                         }
@@ -132,34 +138,42 @@ namespace vbSparkle
                     // Block "else"
                     if (hasExecutedBlock)
                     {
-                        // block else commenté
-                        retCode.AppendLine($"'Else");
-                        retCode.Append(Helpers.CommentLines(4, v.Exp(false)));
+                        if (Context.Options.JunkCodeProcessingMode != JunkCodeProcessingMode.Remove)
+                        {
+                            // block else commenté
+                            retCode.AppendLine($"{prefixRem}Else");
+                            retCode.Append(Helpers.CommentLines(Context.Options.IndentSpacing, v.Exp(false), prefixRem));
+                        }
                     }
                     else if (hasAmbigeousBlock)
                     {
                         // block else non commenté
                         retCode.AppendLine($"Else");
-                        retCode.Append(Helpers.IndentLines(4, v.Exp(partialEvaluation)));
+                        retCode.Append(Helpers.IndentLines(Context.Options.IndentSpacing, v.Exp(partialEvaluation)));
                     }
                     else
                     {
                         // block else executé
-                        retCode.AppendLine($"'Else");
-                        retCode.Append(Helpers.IndentLines(4, v.Exp(partialEvaluation)));
+                        if (Context.Options.JunkCodeProcessingMode != JunkCodeProcessingMode.Remove)
+                            retCode.AppendLine($"{prefixRem}Else");
+
+                        retCode.Append(Helpers.IndentLines(indentLevel, v.Exp(partialEvaluation)));
                     }
 
                 }
 
-                retCode.AppendLine();
+                isFirstBlock = false;
+
+                if (diffCode < retCode.Length)
+                    retCode.AppendLine();
                 //retCode.AppendLine(v.Exp(partialEvaluation));
             }
 
             
             if (hasAmbigeousBlock)
                 retCode.Append("End If");
-            else
-                retCode.Append("'End If");
+            else if (Context.Options.JunkCodeProcessingMode != JunkCodeProcessingMode.Remove)
+                retCode.Append($"{prefixRem}End If");
 
 
             return new DCodeBlock(retCode.ToString());

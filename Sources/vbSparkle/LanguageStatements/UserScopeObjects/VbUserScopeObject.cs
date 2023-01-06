@@ -8,6 +8,7 @@ namespace vbSparkle
     public abstract class VbUserScopeObject<T> : VbUserIdentifiedObject<T>, IVBScopeObject
         where T : IParseTree
     {
+
         public Dictionary<string, VbIdentifiedObject> AllObjects = new Dictionary<string, VbIdentifiedObject>();
 
         public Dictionary<string, VbUserAttribute> Attributes = new Dictionary<string, VbUserAttribute>();
@@ -31,6 +32,30 @@ namespace vbSparkle
             string identifier) 
             : base(context, @object, identifier)
         {
+        }
+
+        public EvaluatorOptions _options = null;
+        public EvaluatorOptions Options
+        {
+            get
+            {
+                if (_options != null)
+                {
+                    return _options;
+                }
+                else
+                {
+                    if (Context?.Options != null)
+                    {
+                        return Context.Options;
+                    }
+                }
+                return _options = new EvaluatorOptions();
+            }
+            set
+            {
+                _options = value;
+            }
         }
 
         public void DeclareConstant(VbSubConstStatement constStatement)

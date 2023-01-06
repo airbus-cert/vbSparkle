@@ -31,7 +31,7 @@ namespace vbSparkle
 
             foreach (var v in CaseBlocks)
             {
-                retCode.AppendLine(Helpers.IndentLines(4, v.Exp(partialEvaluation)));
+                retCode.AppendLine(Helpers.IndentLines(Context.Options.IndentSpacing, v.Exp(partialEvaluation)));
             }
 
             retCode.Append("End Case");

@@ -9,11 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\samples\real_1 - Copy.txt" />
-    <Content Remove="wwwroot\samples\real_1.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="wwwroot\js\highlight\highlight.pack.js" />
     <None Remove="wwwroot\js\highlight\styles\vs.css" />
   </ItemGroup>
@@ -115,8 +110,6 @@
     <None Include="wwwroot\js\highlight\styles\xcode.css" />
     <None Include="wwwroot\js\highlight\styles\xt256.css" />
     <None Include="wwwroot\js\highlight\styles\zenburn.css" />
-    <None Include="wwwroot\samples\real_1 - Copy.txt" />
-    <None Include="wwwroot\samples\real_1.txt" />
   </ItemGroup>
 
   <ItemGroup>

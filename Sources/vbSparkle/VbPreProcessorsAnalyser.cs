@@ -9,6 +9,12 @@ namespace vbSparkle
 {
     public class VbPreprocessorAnalyser
     {
+        public EvaluatorOptions Options { get; internal set; }
+
+        public VbPreprocessorAnalyser(EvaluatorOptions options) { 
+            Options = options;
+        }
+
         private PreProcessor.PPNativeObjectManager context { get; set; } = new PreProcessor.PPNativeObjectManager();
 
         internal string Visit(StartRuleContext stContext)
