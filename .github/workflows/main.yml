@@ -42,7 +42,7 @@ jobs:
         shell: bash
         run: |
           tag=$(git describe --tags --abbrev=0)
-          release_name="App-$tag-${{ matrix.target }}"
+          release_name="vbSparkle-$tag-${{ matrix.target }}"
 
           # Build everything
           dotnet publish Sources/vbSparkle.Console/ --framework netcoreapp3.1 --runtime "${{ matrix.target }}" -c Release -o "$release_name"
@@ -61,6 +61,6 @@ jobs:
       - name: Publish
         uses: softprops/action-gh-release@v1
         with:
-          files: "App*"
+          files: "vbSparkle-*"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
