@@ -3,12 +3,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using vbSparkle.Options;
 using static vbSparkle.VBPreprocessorsParser;
 
 namespace vbSparkle
 {
     public class VbPreprocessorAnalyser
     {
+        public EvaluatorOptions Options { get; internal set; }
+
+        public VbPreprocessorAnalyser(EvaluatorOptions options) { 
+            Options = options;
+        }
+
         private PreProcessor.PPNativeObjectManager context { get; set; } = new PreProcessor.PPNativeObjectManager();
 
         internal string Visit(StartRuleContext stContext)

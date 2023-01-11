@@ -28,7 +28,7 @@ namespace vbSparkle
             retCode.AppendLine($"While {Value.Exp(partialEvaluation)}");
 
             foreach (var CodeBlock in CodeBlocks)
-                retCode.AppendLine(Helpers.IndentLines(4, CodeBlock.Exp(partialEvaluation)));
+                retCode.AppendLine(Helpers.IndentLines(Context.Options.IndentSpacing, CodeBlock.Exp(partialEvaluation)));
 
             retCode.Append("Loop");
 

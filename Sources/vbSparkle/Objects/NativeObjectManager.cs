@@ -1,15 +1,20 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 using vbSparkle.EvaluationObjects;
+using vbSparkle.Options;
 
 namespace vbSparkle
 {
     public class NativeObjectManager : IVBScopeObject
     {
+
         public static NativeObjectManager Current { get; } = new NativeObjectManager();
 
         public Dictionary<string, VbNativeIdentifiedObject> NativeObjects { get; private set; } =
             new Dictionary<string, VbNativeIdentifiedObject>();
+
+        public VbAnalyser Analyser { get; set; }
+        public EvaluatorOptions Options { get; set; }
 
         public NativeObjectManager()
         {

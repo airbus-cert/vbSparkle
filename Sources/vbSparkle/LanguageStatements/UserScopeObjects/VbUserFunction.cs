@@ -56,7 +56,7 @@ namespace vbSparkle
             else
                 sb.AppendLine($"Function {Name}({arguments})");
 
-            sb.AppendLine(Helpers.IndentLines(4, CodeBlock.Exp(partialEvaluation)));
+            sb.AppendLine(Helpers.IndentLines(Context.Options.IndentSpacing, CodeBlock.Exp(partialEvaluation)));
             sb.Append("End Function");
 
             return new DCodeBlock(sb.ToString());

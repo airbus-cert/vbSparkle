@@ -14,18 +14,22 @@
       "launchUrl": "https://localhost/WebApplication1",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-    },
-      "Docker": {
-        "commandName": "Docker",
-        "launchBrowser": true,
-        "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
-        "environmentVariables": {
-          "ASPNETCORE_URLS": "http://*:8000",
-          "ASPNETCORE_ENVIRONMENT": "Development"
-        },
-        "httpPort": 5003,
-        "applicationUrl": "http://localhost:5003/"
       }
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://*:8000"
+      },
+      "applicationUrl": "http://localhost:5003/",
+      "httpPort": 5003
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
     }
   }
+}

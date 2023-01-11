@@ -33,7 +33,10 @@ namespace vbSparkle
 
     public class VbUnknownIdentifiedObject : VbIdentifiedObject
     {
-        public VbUnknownIdentifiedObject(IVBScopeObject context, string identifier) 
+        public VbUnknownIdentifiedObject(
+            IVBScopeObject context, 
+            string identifier
+            ) 
             : base(context, identifier)
         {
         }

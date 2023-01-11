@@ -1,12 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using vbSparkle.Options;
 
 namespace vbSparkle
 {
 
     public class VbModule : VbUserScopeObject<VBScriptParser.ModuleContext>
     {
+        public VbAnalyser Analyser { get; set; }
+
         ///// <summary>
         ///// Evaluators are :
         /////     - variables
@@ -44,12 +47,14 @@ namespace vbSparkle
         public VbModuleBody Body { get; set; }
 
         public VbModule(
+            EvaluatorOptions options,
             VBScriptParser.ModuleContext @object)
             : base(
                 null,
                 @object,
                 "<Module>")
         {
+            Options = options;
 
             if (@object.moduleAttributes()?.attributeStmt() != null)
                 foreach (var attr in @object.moduleAttributes()?.attributeStmt())

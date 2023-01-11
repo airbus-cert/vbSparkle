@@ -27,7 +27,7 @@ namespace vbSparkle
 
             retCode.AppendLine($"With {ObjStatement.Exp(partialEvaluation)}");
 
-            retCode.AppendLine(Helpers.IndentLines(4, CodeBlock.Exp(partialEvaluation)));
+            retCode.AppendLine(Helpers.IndentLines(Context.Options.IndentSpacing, CodeBlock.Exp(partialEvaluation)));
 
             retCode.Append($"End With");
 

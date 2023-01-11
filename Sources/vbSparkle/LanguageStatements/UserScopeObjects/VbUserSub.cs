@@ -52,7 +52,7 @@ namespace vbSparkle
             string arguments = string.Join(", ", ArgList.Select(v => v.Value.Exp(partialEvaluation)));
 
             sb.AppendLine($"Sub {Name}({arguments})");
-            sb.AppendLine(Helpers.IndentLines(4, CodeBlock.Exp(partialEvaluation)));
+            sb.AppendLine(Helpers.IndentLines(Context.Options.IndentSpacing, CodeBlock.Exp(partialEvaluation)));
             sb.Append("End Sub");
 
             return new DCodeBlock(sb.ToString());
