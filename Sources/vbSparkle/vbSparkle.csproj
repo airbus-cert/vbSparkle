@@ -16,7 +16,7 @@ The parsing of Visual Basic Script and VBA is processed through the use of ANTLR
     <Copyright>Airbus CERT, Sylvain Bruyere</Copyright>
     <Authors>Airbus CERT, Sylvain Bruyere</Authors>
     <Company>Airbus</Company>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
