@@ -1,65 +1,6 @@
-﻿dim i as long, toto as integer
-i = i+1
-msgbox i
-msgbox toto
-
-const tutu = 3
-
-if (i =4) then
-msgbox i+2
-end if
-
-function test(totso as long)
- i = i+3
- dim JUJU, toto as string
- toto = "hello"
-end function
-
-Execute(chr((abs(#2019-01-01# - #2019-01-31#) * 2) +5) _
+﻿Execute(chr((abs(#2019-01-01# - #2019-01-31#) * 2) +5) _
    + chr((abs(#2019-01-01# - #2019-02-01#) * 2) +4) _
    + chr((abs(#2019-01-01# - #2019-02-02#) * 2) +3) _
    + chr((abs(#2019-01-01# - #2019-02-03#) * 2) +2) _
    + chr(ASC(VBCRLF) * 13 - 100) _
    + chr(ASC(VBLF) * 17 - 100))
-
-	if (1=2)THEN
-	msgbox "1=2"
-	elseif (2=3) then
-	msgbox "2=3"
-	else
-	msgbox "no correct solutions"
-	end if
-
-if (1=2)THEN
-	msgbox "1=2"
-	else
-	msgbox "no correct solutions"
-	end if
-
-		if (toto(3))THEN
-	msgbox "1=2"
-	elseif (2=3) then
-	msgbox "2=3"
-	else
-	msgbox "no correct solutions"
-	end if
-
-		if (toto(3))THEN
-	msgbox "1=2"
-	elseif (2=4) then
-	msgbox "2=2"
-	elseif (2=3) then
-	msgbox "2=3"
-	elseif (3=7) then
-	msgbox "3=3"
-	else
-	msgbox "no correct solutions"
-	end if
-
-		if (2=2)THEN
-	msgbox "2=2"
-	elseif (ambigous(1)) then
-	msgbox "2=3"
-	else
-	msgbox "no correct solutions"
-	end if
