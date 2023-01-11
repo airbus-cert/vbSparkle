@@ -16,6 +16,7 @@ The parsing of Visual Basic Script and VBA is processed through the use of ANTLR
     <Copyright>Airbus CERT, Sylvain Bruyere</Copyright>
     <Authors>Airbus CERT, Sylvain Bruyere</Authors>
     <Company>Airbus</Company>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -48,5 +49,13 @@ The parsing of Visual Basic Script and VBA is processed through the use of ANTLR
       <PackagePath></PackagePath>
     </None>
   </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="&quot;%25CommonProgramFiles(x86)%25\microsoft shared\TextTemplating\$(VisualStudioVersion)\TextTransform.exe&quot; -a !!BuildConfiguration!$(Configuration) &quot;$(ProjectDir)Properties\AssemblyInfo.tt&quot;" />
+  </Target>
 
 </Project>
