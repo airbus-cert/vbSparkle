@@ -19,7 +19,7 @@ namespace vbSparkle
             StringBuilder retCode = new StringBuilder();
 
             retCode.AppendLine("Else");
-            retCode.Append(Helpers.IndentLines(4, CodeBlock.Exp(partialEvaluation)));
+            retCode.Append(Helpers.IndentLines(Context.Options.IndentSpacing, CodeBlock.Exp(partialEvaluation)));
 
             return new DCodeBlock(retCode.ToString());
         }

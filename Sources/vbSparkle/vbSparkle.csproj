@@ -16,6 +16,7 @@ The parsing of Visual Basic Script and VBA is processed through the use of ANTLR
     <Copyright>Airbus CERT, Sylvain Bruyere</Copyright>
     <Authors>Airbus CERT, Sylvain Bruyere</Authors>
     <Company>Airbus</Company>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -47,6 +48,10 @@ The parsing of Visual Basic Script and VBA is processed through the use of ANTLR
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
   </ItemGroup>
 
 </Project>

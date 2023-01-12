@@ -41,7 +41,7 @@ namespace vbSparkle
             string caseCond = ElseCond ? "Else" : string.Join(", ", CondExpStmt.Select(v => v.Exp(partialEvaluation)).ToArray());
 
             sb.AppendLine($"Case {caseCond}:");
-            sb.Append(Helpers.IndentLines(4, stackBlock.Exp(partialEvaluation)));
+            sb.Append(Helpers.IndentLines(Context.Options.IndentSpacing, stackBlock.Exp(partialEvaluation)));
 
             return new DCodeBlock(sb.ToString());
         }

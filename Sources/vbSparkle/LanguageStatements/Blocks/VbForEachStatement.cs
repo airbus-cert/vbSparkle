@@ -38,7 +38,7 @@ namespace vbSparkle
             StringBuilder retCode = new StringBuilder();
             retCode.AppendLine($"For Each {FirstIdentifiedObject.Name} In {Value.Exp(partialEvaluation)}");
 
-            retCode.AppendLine(Helpers.IndentLines(4, CodeBlock.Exp(partialEvaluation)));
+            retCode.AppendLine(Helpers.IndentLines(Context.Options.IndentSpacing, CodeBlock.Exp(partialEvaluation)));
 
             retCode.Append($"Next {SecondIdentifiedObject.Name}");
 

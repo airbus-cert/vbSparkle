@@ -28,11 +28,30 @@ string deobfuscated = VbPartialEvaluator.PrettifyEncoded(obfuscatedVB);
 ## As a CLI
 The attached project `vbSparkle.CLI` is an exemple of use of vbSparkle as a CLI.
 The current exemple take either a path as an argument or a full binary in `StdIn`, and return the deobfuscated result.
-![Railroad Diagram](/Resources/cli-exemple.JPG)
+![cli-exemple](/Resources/cli-exemple.JPG)
+
+
+```
+  -p, --path                (Group: input) Path of directory or script file(s)
+                            to be deobfuscated.
+
+  --stdin                   (Group: input) (Default: false) Read from stdin
+
+  -o, --output              File offset.
+
+  --sym-rename-mode         (Default: None) Define how symbols can be renamed.
+                            Valid values: None, Variables, Constants, All
+
+  --junk-code-processing    (Default: Comment) Define how junk code should be
+                            processed. Valid values: Nothing, Remove, Comment
+
+  -i, --indent-spacing      (Default: 4) Defines the number of spaces taken into
+                            account for the indentation of the code.
+```
 
 ## Web UI
 The attached project `vbSparkle.Web` is an exemple of use of vbSparkle within a Web UI.
-![Railroad Diagram](/Resources/webUI.PNG)
+![web-ui](/Resources/webUI.PNG)
 
 # Why to write a VBScript de-obfuscator based on partial-evaluation ?
 VBScript and VBA code obfuscation are popular among attackers and allow to evade detection measures, antivirus, firewalls, EDRs, and allows to make malware analysis more difficult.

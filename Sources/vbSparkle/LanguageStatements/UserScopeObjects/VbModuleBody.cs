@@ -5,10 +5,17 @@ namespace vbSparkle
 {
     public class VbModuleBody : VbUserScopeObject<VBScriptParser.ModuleBodyContext>
     {
+
         private VBMain mainSub;
 
-        public VbModuleBody(IVBScopeObject context, VBScriptParser.ModuleBodyContext @object, string identifier) 
-            : base(context, @object, identifier)
+        public VbModuleBody(
+            IVBScopeObject context, 
+            VBScriptParser.ModuleBodyContext @object, 
+            string identifier) 
+            : base( 
+                  context, 
+                  @object, 
+                  identifier)
         {
             mainSub = new VBMain(this, "<GLOBAL>");
 
