@@ -26,12 +26,12 @@ string deobfuscated = VbPartialEvaluator.PrettifyEncoded(obfuscatedVB);
 ... will return `MsgBox("ABC")`.
 
 ## As a CLI
-The attached project `vbSparkle.CLI` is an exemple of use of vbSparkle as a CLI.
-The current exemple take either a path as an argument or a full binary in `StdIn`, and return the deobfuscated result.
-![Railroad Diagram](/Resources/cli-exemple.JPG)
+The attached project `vbSparkle.CLI` is an example of use of vbSparkle as a CLI.
+The current example take either a path as an argument or a full binary in `StdIn`, and return the deobfuscated result.
+![Railroad Diagram](/Resources/cli-example.JPG)
 
 ## Web UI
-The attached project `vbSparkle.Web` is an exemple of use of vbSparkle within a Web UI.
+The attached project `vbSparkle.Web` is an example of use of vbSparkle within a Web UI.
 ![Railroad Diagram](/Resources/webUI.PNG)
 
 # Why to write a VBScript de-obfuscator based on partial-evaluation ?
@@ -81,7 +81,7 @@ Partial-evaluation is not a new concept, it's mostly used by compiler for code-o
 A partial evaluator reads a program (called the subject program) along with some of the inputs for that program, and evaluates only the parts of the program that depend on the inputs provided. 
 Once all these parts have been evaluated, the remaining program (called the residual program) is emitted as output.
 
-For exemple, a pre-compilation process would transform the following subjet code:
+For example, a pre-compilation process would transform the following subjet code:
 ```vb
 var1 = 3*3 
 var2 = sin(arg1)
@@ -183,7 +183,7 @@ A visitor is in charge of crossing over the AST, and create each node partial-ev
 These last will be in charge of evaluating recursively:
 ![Workflow](/Resources/workflow.png)
 
-For exemple, here is our visitor, which instanciate a VbModule evaluator:
+For example, here is our visitor, which instanciate a VbModule evaluator:
 ```c#
     public class VbAnalyser
     {
@@ -199,7 +199,7 @@ For exemple, here is our visitor, which instanciate a VbModule evaluator:
     }
 ```
 
-Here is an exemple of node with Prettify function:
+Here is an example of node with Prettify function:
 ```c#
     public class VbOnGotoStatement : VbStatement<VBScriptParser.OnGoToStmtContext>
     {
